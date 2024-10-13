@@ -3,10 +3,10 @@
 # Variables
 TIMESTAMP=$(date +"%F_%H-%M-%S")
 BACKUP_DIR="/home/ubuntu/backups"
-MYSQL_USER="cmw_backup"
-MYSQL_PASSWORD="Wwewrestler1"
-DATABASE_NAME="mysql"
-S3_BUCKET="data-backup-automation-project"
+MYSQL_USER="replace_with_mysql_username"
+MYSQL_PASSWORD="replace_with_mysql_password"
+DATABASE_NAME="replace_with_database_name"
+S3_BUCKET="replace_with_s3_bucket_name"
 BACKUP_FILE="$BACKUP_DIR/$DATABASE_NAME-$TIMESTAMP.sql"
 
 # Create backup directory if it doesn't exist
