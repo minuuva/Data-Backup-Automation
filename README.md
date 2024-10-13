@@ -46,9 +46,10 @@ The cron job runs the backup script every day at 2 AM, uploading the backup data
 Follow these steps to set up the project on your Ubuntu EC2 instance (or any Linux environment):
 
 **Step 1**: Clone the Repository | bash
-
+'''
 git clone https://github.com/minuuva/Data-Backup-Automation.git
 cd Data-Backup-Automation
+'''
 
 **Step 2**: Configure AWS CLI | bash
 Ensure that AWS CLI is installed and configured with proper permissions for S3 access:
