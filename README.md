@@ -54,42 +54,42 @@ cd Data-Backup-Automation
 **Step 2**: Configure AWS CLI | bash
 Ensure that AWS CLI is installed and configured with proper permissions for S3 access:
 
-aws configure
+```aws configure```
 Provide the necessary AWS Access Key, Secret Key, and Region during the configuration.
 
 **Step 3**: Edit the Backup Script | bash
 Before running the script, open the mysql_backup.sh file and replace the following placeholders with real values:
 
-MYSQL_USER="your_mysql_user"
+```MYSQL_USER="your_mysql_user"
 MYSQL_PASSWORD="your_mysql_password"
 DATABASE_NAME="your_database_name"
-S3_BUCKET="your-s3-bucket-name"
+S3_BUCKET="your-s3-bucket-name"```
 
 **Step 4**: Make the Scripts Executable | bash
 Make sure the scripts are executable:
 
-chmod +x mysql_backup.sh
-chmod +x automation_script.sh
+```chmod +x mysql_backup.sh
+chmod +x automation_script.sh```
 
 ⏰ **Automation with Cron Jobs**
 You can automate the backup process by running the automation script to set up the cron job. This will schedule the backup script to run daily at 2 AM and store the backups in S3.
 
 **Step 1**: Run the Automation Script | bash
-./automation_script.sh
+```./automation_script.sh```
 
 **Step 2**: Verify Cron Jobs | bash
 Check if the cron job was successfully added:
 
-crontab -l
+```crontab -l```
 
 You should see the cron job listed, which looks like this:
-0 2 * * * /home/ubuntu/backup-scripts/mysql_backup.sh >> /home/ubuntu/backup-scripts/backup.log 2>&1
+```0 2 * * * /home/ubuntu/backup-scripts/mysql_backup.sh >> /home/ubuntu/backup-scripts/backup.log 2>&1```
 This will run the backup script at 2 AM every day.
 
 🚀 **Usage** | bash
 You can run the backup script manually at any time:
 
-./mysql_backup.sh
+```./mysql_backup.sh```
 This will:
 
 Create a backup of your MySQL database.
