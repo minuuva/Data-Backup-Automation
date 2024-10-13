@@ -1,7 +1,8 @@
 # Data-Backup-Automation
 
-🛠️ Data Backup Automation Project 🚀
-This project automates the backup of MySQL databases and important files, storing them securely in AWS S3. The automation uses Bash scripts and is scheduled with cron jobs, ensuring that backups are created at regular intervals and uploaded to the cloud for safekeeping.
+🛠️ Data Backup Automation Project 
+
+🚀This project automates the backup of MySQL databases and important files, storing them securely in AWS S3. The automation uses Bash scripts and is scheduled with cron jobs, ensuring that backups are created at regular intervals and uploaded to the cloud for safekeeping.
 
 📋 Table of Contents
 Overview
