@@ -1,10 +1,10 @@
 # Data-Backup-Automation
 
-##🛠️ Data Backup Automation Project 
+🛠️ **Data Backup Automation Project** 
 
 🚀This project automates the backup of MySQL databases and important files, storing them securely in AWS S3. The automation uses Bash scripts and is scheduled with cron jobs, ensuring that backups are created at regular intervals and uploaded to the cloud for safekeeping.
 
-📋 Table of Contents
+📋 **Table of Contents**
 Overview
 Features
 Tools Used
@@ -14,10 +14,10 @@ Automation with Cron Jobs
 Usage
 Contributing
 
-📝 Overview
+📝 **Overview**
 In this project, we automate the process of backing up MySQL databases and files to AWS S3. This ensures that critical data is securely stored in the cloud, safe from local system failures. The automation is handled through Bash scripts and cron jobs, providing an efficient way to handle data backups on a regular schedule.
 
-⭐ Features
+⭐ **Features**
 Automated Backup: Automatically create backups of your MySQL database and important files.
 S3 Integration: Automatically upload backups to AWS S3 for secure cloud storage.
 Easy Scheduling: Use cron jobs to schedule backups at regular intervals.
@@ -30,7 +30,7 @@ AWS S3: For secure cloud storage of backup data.
 AWS CLI: Command-line interface to interact with AWS S3 for uploading backups.
 Cron: For automating the scheduling of the backups.
 
-🛡️ How It Works
+🛡️ **How It Works**
 The project consists of two key scripts:
 
 Backup Script (mysql_backup.sh):
@@ -70,7 +70,7 @@ Make sure the scripts are executable:
 chmod +x mysql_backup.sh
 chmod +x automation_script.sh
 
-⏰ Automation with Cron Jobs
+⏰ **Automation with Cron Jobs**
 You can automate the backup process by running the automation script to set up the cron job. This will schedule the backup script to run daily at 2 AM and store the backups in S3.
 
 **Step 1**: Run the Automation Script | bash
@@ -85,7 +85,7 @@ You should see the cron job listed, which looks like this:
 0 2 * * * /home/ubuntu/backup-scripts/mysql_backup.sh >> /home/ubuntu/backup-scripts/backup.log 2>&1
 This will run the backup script at 2 AM every day.
 
-🚀 Usage | bash
+🚀 **Usage** | bash
 You can run the backup script manually at any time:
 
 ./mysql_backup.sh
